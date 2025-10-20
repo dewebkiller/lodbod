@@ -1,57 +1,69 @@
-<footer class="section-padding">
+<footer class="section-padding-top pb-4">
     <div class="container">
         <!-- Three column Footer -->
         <div class="row">
-            <div class="col-lg-4">
+        <div class="col-lg-6 col-12">
                 <div class="footer-widget">
-                    <h3>Quick Links</h3>
+                <img class="
+                footerlogo" src="images/footer-logo.png" alt="Lodbod">
+                    <p>
+                    Lodbod is a digital logistics platform that connects shippers directly with vehicle owners and drivers. We make moving goods simple, transparent, and reliable for everyone.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12">
+                <div class="footer-widget">
+                    <h3>Solutions</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shippers</a></li>
+                        <li><a href="#">Truckers</a></li>
+                        <li><a href="#">Tracking</a></li>
+                        <li><a href="#">Lodbod Champions</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-2 col-12">
                 <div class="footer-widget">
-                    <h3>Quick Links</h3>
+                    <h3>Legal & Help</h3>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Help Center</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-2 col-12">
                 <div class="footer-widget">
-                    <h3>Our Gallery</h3>
-                    <ul class="footer-gallery">
-                        <li style="float: left;"><a data-fancybox="gallery" href="//c1.staticflickr.com/5/4265/35500273202_7b437aef0b_h.jpg"><img src="//c1.staticflickr.com/5/4265/35500273202_7b437aef0b_h.jpg" alt="" width="180" height="180"></a></li>
-                        <li style="float: left;"><a data-fancybox="gallery" href="//c1.staticflickr.com/1/867/40996993864_8ace9baf99_h.jpg"><img src="//c1.staticflickr.com/1/867/40996993864_8ace9baf99_h.jpg" alt="" width="180" height="180"></a></li>
-                        <li style="float: left;"><a data-fancybox="gallery" href="//c1.staticflickr.com/5/4211/35477406201_b13ffc37a9_c.jpg"><img src="//c1.staticflickr.com/5/4211/35477406201_b13ffc37a9_c.jpg" alt="" width="180" height="180"></a></li>
-                        <li style="float: left;"><a data-fancybox="gallery" href="//c1.staticflickr.com/6/5647/30305414704_776ffcc1b8_h.jpg"><img src="//c1.staticflickr.com/6/5647/30305414704_776ffcc1b8_h.jpg" alt="" width="180" height="180"></a></li>
-
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-<section class="btm-footer">
+<section class="btm-footer section-padding-bottom">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="copyright">
-                    <p class="color-white">&copy; <?php echo date('Y');?>. <span>Business Name.</span> All Rights Reserved.</p>
+                    <p class="color-white">&copy; <?php echo date('Y');?>. <span>Lodbod | </span> All Rights Reserved.</p>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="powered">
-                    <a href="https://dewebkiller.com" target="_blank" title="dewebkiller" class="colo-white">&lt;dewebkiller /&gt;</a>
+                <div class="footer-social">
+                    
+                <ul class="list-unstyled d-flex gap-3">
+                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                </ul>
                 </div>
                 <a href="#" class="scrollup"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
             </div>
