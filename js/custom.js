@@ -27,32 +27,6 @@ $(document).ready(function () {
     //Add div clearfix after 3 list
     $("ul.services-ul li:nth-child(3n)").after("<div class='clearfix'></div>")
 });
-// Banner
-$('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    video: true,
-    lazyLoad: true,
-    center: true,
-    videoHeight: 450,
-    videoWidth: 100 + '%',
-    navText: ["<span class='icon icon-arrow-left7 hvr-forward'></span>", "<span class='icon icon-arrow-right7 hvr-backward'></span>"],
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-});
-
 
 // Fixed menu
 $("header").waypoint(function () {
@@ -60,3 +34,70 @@ $("header").waypoint(function () {
     $(".btm-header.js-toggleClass").toggleClass("js-toggleClass");
     return false;
 }, {offset: '-0.1px'});
+
+/**
+ * dwk_animateCounter
+ * Animates the counting of numbers in elements with the 'data-target' attribute.
+ */
+function dwk_animateCounter(duration = 2000) {
+    const counters = document.querySelectorAll('.dwk-counter h2[data-target]');
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target'); 
+        const suffixSpan = counter.querySelector('span'); 
+        let startTimestamp = null; 
+
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+
+            const progress = timestamp - startTimestamp; 
+            
+            const currentCount = Math.min(Math.floor((progress / duration) * target), target);
+
+          
+            if (target >= 1000) {
+                
+                if (currentCount >= 1000) {
+                     
+                    const kValue = Math.floor(currentCount / 100) / 10;
+                    counter.textContent = kValue + 'K';
+                } else {
+                     
+                    counter.textContent = currentCount;
+                }
+            } else {
+               
+                counter.textContent = currentCount;
+            }
+
+            
+            if (suffixSpan) {
+                counter.appendChild(suffixSpan);
+            }
+
+            
+            if (progress < duration) {
+                
+                window.requestAnimationFrame(step);
+            } else {
+                
+                if (target === 30000) {
+                    counter.textContent = '30K';
+                } else {
+                    counter.textContent = target;
+                }
+                
+                if (suffixSpan) {
+                    counter.appendChild(suffixSpan);
+                }
+            }
+        };
+
+        window.requestAnimationFrame(step);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    dwk_animateCounter(2000); 
+});

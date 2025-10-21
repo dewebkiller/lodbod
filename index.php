@@ -13,15 +13,15 @@
                 <div class="hero-content-btm">
                     <ul class="list-unstyled d-flex gap-5 dwk-counter">
                         <li>
-                            <h2>500<span class="color-primary">+</span></h2>
+                            <h2 data-target="500">500<span class="color-primary">+</span></h2>
                             <p>Active shippers</p>
                         </li>
                         <li>
-                            <h2>1500<span class="color-primary">+</span></h2>
+                            <h2 data-target="1500">1500<span class="color-primary">+</span></h2>
                             <p>Trucks registered </p>
                         </li>
                         <li>
-                            <h2>30K<span class="color-primary">+</span></h2>
+                            <h2 data-target="30000">30K<span class="color-primary">+</span></h2>
                             <p>Successful deliveries</p>
                         </li>
                     </ul>
