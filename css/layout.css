@@ -4,7 +4,7 @@
   --primarycolor: #e54d26;
   --secondarycolor: #3498db;
   --tertiarycolor: #2c3e50;
-  --primaryoff: #dcdde1;
+  --lightcolor: #ecefee;
   --purewhite: #fff;
   --pureblack: #000;
   --black40: #e8e8e8;
@@ -13,11 +13,9 @@
   --blackcolor: #141414;
   --color-text: #494949;
   --color-heading: #070717;
-  --colorgreen: #76b852;
-  --acentcolor: #ffeb3b;
-  --colorblue: #0066cb;
   --colorred: #eb062c;
   --sectionpadding: 60px;
+  --h1font: 52px;
   --font-family-heading: "Libre Franklin", sans-serif;
   --font-family-primary: "Archivo", sans-serif;
 }
@@ -29,7 +27,7 @@ body {
 }
 
 p {
-    line-height: 150%;
+  line-height: 150%;
 }
 img {
   max-width: 100%;
@@ -44,19 +42,27 @@ h5,
 h6 {
   font-family: var(--font-family-heading);
 }
-a:hover {
+a, a:hover {
   text-decoration: none;
 }
 h1 {
-    font-size: 52px;
+  font-size: 52px;
+  font-weight: 700;
+}
+h2 {
+    font-size: 48px;
     font-weight: 700;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 500;
 }
 /* General css */
 .section-padding {
   padding: var(--sectionpadding) 0;
 }
 .section-padding-2x {
-    padding: calc(var(--sectionpadding) * 2) 0;
+  padding: calc(var(--sectionpadding) * 2) 0;
 }
 .section-padding-bottom {
   padding-bottom: var(--sectionpadding);
@@ -74,7 +80,7 @@ h1 {
   padding-right: 0;
 }
 .color-primary {
-    color: var(--primarycolor);
+  color: var(--primarycolor);
 }
 .color-black {
   color: #000;
@@ -94,8 +100,11 @@ h1 {
 .color-green {
   color: var(--colorgreen);
 }
+.bg-light {
+  background-color: var(--lightcolor);
+}
 .bg-green {
-  background-color: var(--colorgreen) !important;
+  background-color: var(--colorgreen);
 }
 .spacer-10 {
   height: 10px;
@@ -291,8 +300,9 @@ a.btn-bgcolor-primary:hover {
 .navbar-nav li a {
   padding: 8px 12px !important;
 }
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: var(--primarycolor) !important;
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+  color: var(--primarycolor) !important;
 }
 .navbar-fixed-top .top-header-2 {
   display: none;
@@ -302,47 +312,98 @@ a.btn-bgcolor-primary:hover {
 }
 /* Hero section */
 .hero-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    padding-top: var(--sectionpadding);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: var(--sectionpadding);
 }
 .hero-content-wrapper h1 {
-    margin: 0;
+  margin: 0;
 }
 .hero-content {
-    width: 90%;
+  width: 90%;
 }
 .hero-content p {
-    font-size: 20px;
-    line-height: 150%;
+  font-size: 20px;
+  line-height: 150%;
 }
 .hero-content > a {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .dwk-counter h2 {
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 120%;
-    margin-bottom: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
 }
 .dwk-counter p {
-    font-size: 18px;
-    margin-bottom: 0;
+  font-size: 18px;
+  margin-bottom: 0;
 }
 .hero-image-shadow {
-    position: relative;
+  position: relative;
 }
 .hero-image-shadow::after {
-    position: absolute;
-    content: "";
-    width: 80%;
-    left: 60%;
-    top: 20%;
-    height: 80%;
-    background: var(--primarycolor);
-    border-radius: 0 24px 0 0;
-    z-index: -1;
+  position: absolute;
+  content: "";
+  width: 80%;
+  left: 60%;
+  top: 20%;
+  height: 80%;
+  background: var(--primarycolor);
+  border-radius: 0 24px 0 0;
+  z-index: -1;
+}
+
+/* Festures section */
+
+.icon-round {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background: var(--primarycolor);
+  text-align: center;
+  line-height: 120px;
+  margin-bottom: 32px;
+}
+/* How it works */
+.content-how-it-works {
+    padding-right: 80px;
+}
+.content-how-it-works h2 {
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.image-how-it-works img {
+    border-radius: 24px;
+}
+.steps-list li a {
+    color: var(--color-heading);
+}
+.steps-list li a p {
+    color: var(--black80);
+}
+.step-link {
+    display: block; 
+    text-decoration: none;
+    padding: 1rem 1.5rem; 
+    border-radius: 0.5rem; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    background-color: transparent; 
+}
+.step-link:hover,
+.step-link.active-step { 
+    background-color: var(--blackcolor);
+}
+
+.step-link:hover .step-title,
+.step-link:hover .step-description,
+.step-link.active-step .step-title,
+.step-link.active-step .step-description {
+    color: var(--purewhite);
+}
+.step-item {
+    padding: 0; 
 }
 /* Footer */
 footer {
@@ -358,7 +419,7 @@ footer {
   margin-bottom: 24px;
 }
 .footer-widget .footerlogo {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 .footer-widget ul li {
   list-style: none;
