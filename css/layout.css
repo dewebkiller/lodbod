@@ -405,6 +405,23 @@ a.btn-bgcolor-primary:hover {
 .step-item {
     padding: 0; 
 }
+/* Swiper */
+.dwkSwiper .swiper-slide {
+    background: var(--lightcolor);
+    padding: 20px;
+    border-radius: 16px;
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.dwkSwiper .swiper-slide ul {
+    justify-content: center;
+}
+.dwkSwiper .swiper-slide {
+    
+    width: 70%; 
+    box-sizing: border-box; 
+}
 /* Footer */
 footer {
   background: var(--blackcolor);

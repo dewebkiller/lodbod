@@ -28,6 +28,27 @@ $(document).ready(function () {
     $("ul.services-ul li:nth-child(3n)").after("<div class='clearfix'></div>")
 });
 
+var swiper = new Swiper(".dwkSwiper", {
+    slidesPerView: 2.3, 
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true, 
+    
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },  
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+        formatFractionCurrent: function (number) {
+            var totalSlides = 5; 
+            return (number > totalSlides) ? number % totalSlides || totalSlides : number;
+        }
+    },
+    observer: true,
+    observeParents: true,
+});
 // Fixed menu
 $("header").waypoint(function () {
     $(".btm-header").toggleClass("navbar-fixed-top animated fadeInDown");
