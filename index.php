@@ -117,16 +117,28 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>What Shippers Say</h2>
-
+            <div class="main-container">
+    <div class="slider-header-controls">
+        <h2 class="slider-heading">What Shippers Say</h2>
+        <div class="controls-wrapper">
+            
+            <div class="navigation-wrapper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> 
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </div>
     </div>
     <div class="swiper dwkSwiper">
+        
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -140,7 +152,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -154,7 +166,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -168,7 +180,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -182,7 +194,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -196,7 +208,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="slide-content">
-                <ul class="list-unstyled d-flex gap-1">
+                    <ul class="list-unstyled d-flex gap-1">
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
                         <li><i class="fa fa-star"></i></li>
@@ -209,11 +221,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="navigation-wrapper">
-            <div class="swiper-button-prev">←</div>
-            <div class="swiper-button-next">→</div>
-        </div>
+
     </div>
 </section>
 <?php include_once('footer.php');

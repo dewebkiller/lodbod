@@ -28,24 +28,46 @@ $(document).ready(function () {
     $("ul.services-ul li:nth-child(3n)").after("<div class='clearfix'></div>")
 });
 
+// var swiper = new Swiper(".dwkSwiper", {
+//     slidesPerView: 2.3, 
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     loop: true, 
+    
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },  
+//     pagination: {
+//         el: ".swiper-pagination",
+//         type: "fraction",
+//         formatFractionCurrent: function (number) {
+//             var totalSlides = 5; 
+//             return (number > totalSlides) ? number % totalSlides || totalSlides : number;
+//         }
+//     },
+//     observer: true,
+//     observeParents: true,
+// });
+
 var swiper = new Swiper(".dwkSwiper", {
-    slidesPerView: 2.3, 
+    slidesPerView: 1.8,
     spaceBetween: 30,
     centeredSlides: true,
-    loop: true, 
-    
+    loop: true,
+
     navigation: {
+       
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },  
-    pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        formatFractionCurrent: function (number) {
-            var totalSlides = 5; 
-            return (number > totalSlides) ? number % totalSlides || totalSlides : number;
-        }
     },
+    pagination: {
+        
+        el: ".swiper-pagination", 
+        type: "fraction",
+       
+    },
+
     observer: true,
     observeParents: true,
 });
@@ -58,7 +80,6 @@ $("header").waypoint(function () {
 
 /**
  * dwk_animateCounter
- * Animates the counting of numbers in elements with the 'data-target' attribute.
  */
 function dwk_animateCounter(duration = 2000) {
     const counters = document.querySelectorAll('.dwk-counter h2[data-target]');
