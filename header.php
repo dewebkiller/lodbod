@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
 </head>
 
-<body class="<?php basename($_SERVER['PHP_SELF'], '.php') ?>">
+<body>
     <header>
         <section class="btm-header">
             <div class="container">
@@ -47,84 +47,20 @@
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mb-2 mb-lg-0">
-                                        <?php
-                                        $url_pages = $_SERVER['REQUEST_URI'];
-                                        $ex_pages = explode("/", $url_pages);
-                                        $curr_page = $ex_pages[count($ex_pages) - 1];
-                                        ?>
-
-                                        <li class="nav-item <?php
-
-                                                            if (($curr_page == 'about.php')) {
-
-                                                                echo 'active';
-                                                            }
-
-                                                            ?>">
-
-                                            <a class="nav-link" href="about.php">Shippers </a>
-
-
-
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="#">Shippers </a>
                                         </li>
-
-
-                                        <li class="nav-item <?php
-
-                                                            if (($curr_page == 'gallery.php')) {
-
-                                                                echo 'active';
-                                                            }
-
-                                                            ?>">
-
-                                            <a class="nav-link" href="gallery.php">Truckers </a>
-
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Truckers </a>
                                         </li>
-
-                                        <li class="nav-item <?php
-
-                                                            if (($curr_page == 'about.php')) {
-
-                                                                echo 'active';
-                                                            }
-
-                                                            ?>">
-
-                                            <a class="nav-link" href="about.php">Tracking </a>
-
-
-
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Tracking </a>
                                         </li>
-
-
-
-                                        <li class="nav-item <?php
-
-                                                            if (($curr_page == 'about.php')) {
-
-                                                                echo 'active';
-                                                            }
-
-                                                            ?>">
-
-                                            <a class="nav-link" href="about.php">About Us </a>
-
-
-
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About Us </a>
                                         </li>
-
-                                        <li class="nav-item <?php
-
-                                                            if (($curr_page == 'contact.php')) {
-
-                                                                echo 'active';
-                                                            }
-
-                                                            ?>">
-
-                                            <a class="nav-link" href="contact.php">Contact Us</a>
-
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
