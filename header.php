@@ -1,3 +1,7 @@
+<?php 
+    $filename = basename($_SERVER['PHP_SELF'], '.php');
+    $body_class = ($filename === 'index') ? 'home' : $filename;
+?>
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body>
+<body class="<?php echo $body_class; ?>">
     <header>
         <section class="btm-header">
             <div class="container">
