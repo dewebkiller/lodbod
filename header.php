@@ -31,9 +31,6 @@
                     <div class="col-lg-7 col-md-8 col-sm-12 col-6 col-xs-12">
                         <div class="main-menu">
                             <nav class="navbar navbar-expand-lg">
-
-                                <a class="navbar-brand" href="#">Navigation</a>
-
                                 <button class="navbar-toggler"
                                     type="button"
                                     data-bs-toggle="collapse"

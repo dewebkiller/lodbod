@@ -1,36 +1,42 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .section-padding {
+    padding: 40px 0;
+  }
+  .section-padding-2x {
+    padding: 50px 0;
+  }
+  .no-padding-bottom {
+    padding-bottom: 0;
+  }
   h1 {
     font-size: 40px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
   }
   .navbar-brand {
     display: block;
   }
-  div#navbarSupportedContent {
-    display: block !important;
-    position: fixed;
-    background: #fff;
-    height: 100vh !important;
-    top: 0px;
-    padding-left: 15px;
-    left: -80%;
-    z-index: 9999;
-    width: 70%;
-    transition: all 0.4s;
+  .btm-header .main-menu .navbar {
+    justify-content: flex-end;
+    padding: 0;
   }
-  div#navbarSupportedContent.show {
-    left: 0;
+  .main-menu .navbar-collapse {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background: var(--lightcolor);
+    border-radius: 8px;
+    padding: 12px 0;
   }
   .navbar-fixed-top {
     position: relative;
   }
-  .top-header,
-  .banner-caption {
-    display: none;
-  }
-  .logo {
-    text-align: center;
-  }
+
   .btm-header .main-menu {
     float: none;
     position: relative;
@@ -40,12 +46,37 @@
     margin-top: 10px;
     z-index: 999;
   }
+  .hero-content-wrapper {
+    margin-bottom: 40px;
+    padding-top: 0;
+  }
+  .dwk-counter.gap-5 {
+    gap: 1rem !important;
+  }
+  ul.dwk-counter li {
+    width: 33.33%;
+}
   .dwk-counter h2 {
-    font-size: 35px;
+    font-size: 30px;
+  }
+
+  .dwk-counter p {
+    font-size: 13px;
   }
   .hero-image-shadow::after {
     display: none;
   }
+  .content-how-it-works {
+    padding-right: 0;
+  }
+  .dwkSwiper .swiper-slide ul li i {
+    font-size: 18px;
+  }
+  .blog-card-wrapper {
+    gap: 0;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
   .btm-footer {
     padding-bottom: 100px;
   }
