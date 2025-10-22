@@ -28,10 +28,10 @@
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-6">
                         <div class="logo"><img src="images/logo.png" alt="Lodbod"></div>
                     </div>
-                    <div class="col-lg-7 col-md-8 col-sm-12 col-6 col-xs-12">
+                    <div class="col-lg-7 col-md-7 col-sm-12 col-6 col-xs-12">
                         <div class="main-menu">
-                            <nav class="navbar navbar-expand-lg">
-                                <button class="navbar-toggler"
+                            <nav class="navbar navbar-expand-md">
+                                <button class="navbar-toggler d-block d-sm-block d-md-none"
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent"
@@ -58,12 +58,18 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Contact Us</a>
                                         </li>
+                                        <li class="nav-item d-block d-sm-block d-md-none">
+                                            <a class="nav-link" href="#">Login</a>
+                                        </li>
+                                        <li class="nav-item d-block d-sm-block d-md-none">
+                                            <a class="nav-link" href="#">Get Started</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 col-6 d-none d-sm-block">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-6 d-none d-sm-block">
                         <div class="header-btn">
                             <ul class="list-unstyled d-flex gap-3 justify-content-end">
                                 <li><a href="#" class="btn btn-border btn-border-black-40 border-radius-8">Login</a></li>
