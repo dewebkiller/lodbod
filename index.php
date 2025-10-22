@@ -1,6 +1,6 @@
 <?php include_once('header.php'); ?>
 
-<section class="content-wrapper section-padding-2x  section-hero">
+<section class="content-wrapper section-padding-2x no-padding-bottom section-hero">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12 hero-content-wrapper">
@@ -117,24 +117,24 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-            <div class="main-container">
-    <div class="slider-header-controls">
-        <h2 class="slider-heading">What Shippers Say</h2>
-        <div class="controls-wrapper">
-            
-            <div class="navigation-wrapper">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div> 
-                <div class="swiper-button-next"></div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="main-container">
+                    <div class="slider-header-controls">
+                        <h2 class="slider-heading">What Shippers Say</h2>
+                        <div class="controls-wrapper">
+
+                            <div class="navigation-wrapper">
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="swiper dwkSwiper">
-        
+
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="slide-content">
@@ -231,9 +231,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-            <h2>Simplify logistics and cargo management</h2>
+                <h2>Simplify logistics and cargo management</h2>
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col-lg-4 col-12">
@@ -272,7 +272,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-            <h2>Read on to know more about our products</h2>
+                <h2>Read on to know more about our products</h2>
             </div>
         </div>
         <div class="row">
@@ -282,12 +282,12 @@
                         <img src="images/logistics.png" alt="How to make your logistics easy">
                     </div>
                     <div class="blog-card-content d-flex flex-column">
-                    <h3>How to make your logistics easy</h3>
-                    <p> Explore our blog for insider tips and stories from the world of logistics.</p>
+                        <h3>How to make your logistics easy</h3>
+                        <p> Explore our blog for insider tips and stories from the world of logistics.</p>
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>  
+                <a href="#" class="btn-blog">Read More </a>
             </div>
 
             <div class="col-lg-4 col-12 blog-card-wrapper d-flex flex-column">
@@ -296,12 +296,12 @@
                         <img src="images/logistics.png" alt="How to make your logistics easy">
                     </div>
                     <div class="blog-card-content d-flex flex-column">
-                    <h3>How to make your logistics easy</h3>
-                    <p> Explore our blog for insider tips and stories from the world of logistics. Explore our blog for insider tips and stories from the world of logistics.</p>
+                        <h3>How to make your logistics easy</h3>
+                        <p> Explore our blog for insider tips and stories from the world of logistics. Explore our blog for insider tips and stories from the world of logistics.</p>
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>  
+                <a href="#" class="btn-blog">Read More </a>
             </div>
 
             <div class="col-lg-4 col-12 blog-card-wrapper d-flex flex-column">
@@ -310,15 +310,95 @@
                         <img src="images/no-image.png" alt="How to make your logistics easy">
                     </div>
                     <div class="blog-card-content d-flex flex-column">
-                    <h3>How to make your logistics easy</h3>
-                    <p> Explore our blog for insider tips and stories from the world of logistics.</p>
+                        <h3>How to make your logistics easy</h3>
+                        <p> Explore our blog for insider tips and stories from the world of logistics.</p>
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>  
+                <a href="#" class="btn-blog">Read More </a>
             </div>
 
         </div>
     </div>
 </section>
+<section class="section-padding section-contact-home bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 offset-lg-2 text-center heading-wrapper">
+                <h2>Need help optimizing your logistics?</h2>
+                <p>Lodbod connects your factory’s shipments with reliable transporters—fast, easy, and trackable.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12 offset-lg-3">
+
+                <div class="form-wrapper bg-white">
+                    <form action="#" method="post" class="contact-form">
+                        <ul class="list-unstyled d-flex flex-column gap-3">
+                            <li><input type="text" name="name" placeholder="Name" required class="form-control" /></li>
+
+                            <li><input type="email" name="email" placeholder="Email" required class="form-control" /></li>
+
+                            <li><input type="text" name="phone" placeholder="Phone" required class="form-control" /></li>
+                            <li>
+                                <textarea name="message" rows="4" placeholder="Message" required class="form-control"></textarea>
+                            </li>
+                            <li>
+                            <input type="checkbox" class="form-check-input" id="checkTerms" required>
+        <label class="form-check-label" for="checkTerms">
+            I agree to <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+        </label>
+                            </li>
+                            <li>
+                            <button type="submit" class="btn btn-bgcolor btn-bgcolor-primary border-radius-8 color-white">Send Message</button>
+                            </li>
+                        </ul>
+
+
+
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-wrapper section-padding-2x no-padding-bottom section-hero bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 hero-content-wrapper color-white">
+                <div class="hero-content">
+                    <h2>Start ordering truck from our platform now</h2>
+                    <p>Experience the convenience of ordering trucks with just one touch! Download our app now and enjoy a fast and hassle-free logistic experience.</p>
+                    
+
+                </div>
+                <div class="hero-content-btm">
+                    <ul class="list-unstyled d-flex gap-5">
+                        <li>
+                            <a href="#">
+                                <img src="images/appstore.png" alt="Download from appstore" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/playstore.png" alt="Download from playstore" />
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="hero-image float-end">
+                    <img src="images/footer-cta-image.png" alt="Lodbod Hero Image" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include_once('footer.php');
