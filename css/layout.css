@@ -104,6 +104,9 @@ h3 {
 .bg-light {
   background-color: var(--lightcolor);
 }
+.bg-black {
+    background-color: var(--blackcolor);
+}
 .bg-green {
   background-color: var(--colorgreen);
 }
@@ -506,6 +509,9 @@ a.btn-bgcolor-primary:hover {
     font-size: 12px;
     color: var(--blackcolor);
     display: block
+}
+.section-benefits h2 {
+    margin-bottom: 52px;
 }
 /* Footer */
 footer {
