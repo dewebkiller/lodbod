@@ -607,8 +607,7 @@ a.btn-bgcolor-primary:hover {
   color: var(--primarycolor);
 }
 /* Pricing section */
-.section-pricing .row {
-  display: grid;
+.section-pricing .row.d-grid {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-left: 0;
@@ -640,6 +639,7 @@ a.btn-bgcolor-primary:hover {
     margin-bottom: 12px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .pricing-card  h3 {
     margin-top: 32px;
@@ -681,6 +681,31 @@ a.btn-bgcolor-primary:hover {
 }
 .pricing-card a.color-white:hover {
   color: var(--blackcolor);
+}
+.pricing-card-diamond h3 {
+    margin-top: 0;
+}
+.pricing-card-diamond h4 {
+    justify-content: flex-start;
+    gap: 12px;
+}
+.pricing-card-diamond {
+    border-radius: 16px;
+    padding: 40px 32px;
+    gap: 32px;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px !important;
+}
+.pricing-card-diamond .pricing-list ul li::after {
+    background: url(../images/icon-check-white.png) no-repeat;
+}
+.pricing-list ul.d-grid {
+    grid-template-columns: repeat(2, auto);
+    gap: 16px;
+}
+.pricing-card-diamond .pricing-list ul li {
+    width: auto;
 }
 /* Footer */
 footer {
