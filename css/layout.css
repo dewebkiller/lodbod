@@ -16,6 +16,7 @@
   --color-heading: #070717;
   --colorred: #eb062c;
   --coloryellow: #ffbe3f;
+  --colorbrown: #AA4930;
   --sectionpadding: 60px;
   --h1font: 52px;
   --font-family-heading: "Libre Franklin", sans-serif;
@@ -124,6 +125,9 @@ h3 {
 }
 .bg-primary {
   background-color: var(--primarycolor) !important;
+}
+.bg-brown {
+  background: var(--colorbrown);
 }
 .spacer-10 {
   height: 10px;
@@ -707,6 +711,60 @@ a.btn-bgcolor-primary:hover {
 .pricing-card-diamond .pricing-list ul li {
     width: auto;
 }
+.section-performance-metrics .dwk-counter  li {
+    padding: 0 20px;
+}
+/* Partner logos animation */
+  .scrolling-wrapper-container {
+    overflow: hidden;
+    
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    gap: 120px; 
+    animation: scroll 10s linear infinite;
+    padding: 25px 0;
+  }
+  
+  .logo-item {
+    flex-shrink: 0;
+  }
+  
+  /* Pause the animation on hover */
+  .container:hover .scrolling-wrapper {
+    animation-play-state: paused;
+  }
+  /* The animation that moves the wrapper */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Faq Accordion */
+  #accordionfaq .accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+  }
+#accordionfaq .accordion-button,   #accordionfaq .accordion-button:not(.collapsed) {
+    background: var(--purewhite);
+  }
+  #accordionfaq .accordion-button:not(.collapsed),   #accordionfaq .accordion-collapse.collapse.show { 
+    background: var(--colorbrown);
+    color: var(--purewhite);
+    box-shadow: none;
+  }
+  #accordionfaq .accordion-item {
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+  }
 /* Footer */
 footer {
   background: var(--blackcolor);

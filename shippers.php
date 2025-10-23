@@ -89,8 +89,7 @@
 <?php include_once('sections/how-it-works.php');?>
 <?php include_once('sections/pricing-plans.php');?>
 <?php include_once('sections/testimonial.php');?>
-<?php include_once('sections/benefits.php');?>
+<?php include_once('sections/performance-metrics.php');?>
+<?php include_once('sections/faq.php');?>
 <?php include_once('sections/blog.php');?>
-<?php include_once('sections/contact.php');?>
-<?php include_once('sections/footer-hero.php');?>
 <?php include_once('footer.php');

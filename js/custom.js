@@ -79,58 +79,82 @@ $("header").waypoint(function () {
 }, {offset: '-0.1px'});
 
 /**
- * dwk_animateCounter
+ * dwk_animateCounter - Revised to keep the original <span> element in the DOM 
+ * and update the number content before it.
+ * @param {number} duration - The duration of the animation in milliseconds.
  */
 function dwk_animateCounter(duration = 2000) {
     const counters = document.querySelectorAll('.dwk-counter h2[data-target]');
 
-    counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target'); 
-        const suffixSpan = counter.querySelector('span'); 
-        let startTimestamp = null; 
+    // Helper function to format the number (e.g., 500 -> "500", 5500 -> "5.5K")
+    const formatNumber = (number) => {
+        let displayValue = number;
 
+        if (number >= 1000) {
+            // Convert to 'K' format (e.g., 5500 -> 5.5K)
+            // Math.round(number / 100) / 10 ensures up to one decimal place (e.g., 5.5)
+            const kValue = (Math.round(number / 100) / 10);
+            
+            // Check if it's a whole number (e.g., 5.0) to display as "5K"
+            displayValue = (kValue % 1 === 0 ? Math.floor(kValue) : kValue) + 'K';
+        }
+
+        return displayValue.toString(); // Return as a string
+    };
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target');
+        
+        // Find the suffix span element
+        const suffixSpan = counter.querySelector('span');
+        
+        let startTimestamp = null;
+        
+        // Start the counter at '0', leaving the <span> intact.
+        // We use textContent on the H2 element itself, which will replace everything *unless* // we re-append the span, but using insertAdjacentText is cleaner for the start.
+        // A simple way to set the initial content without affecting the span is:
+        if (suffixSpan) {
+            counter.prepend('0'); // Temporarily set the number part
+        } else {
+             counter.textContent = '0';
+        }
+        
         const step = (timestamp) => {
             if (!startTimestamp) startTimestamp = timestamp;
 
-            const progress = timestamp - startTimestamp; 
+            const progress = timestamp - startTimestamp;
             
+            // Calculate the current count
             const currentCount = Math.min(Math.floor((progress / duration) * target), target);
 
-          
-            if (target >= 1000) {
-                
-                if (currentCount >= 1000) {
-                     
-                    const kValue = Math.floor(currentCount / 100) / 10;
-                    counter.textContent = kValue + 'K';
-                } else {
-                     
-                    counter.textContent = currentCount;
-                }
+            // Get the formatted number string (e.g., "500" or "5.5K")
+            const numberText = formatNumber(currentCount);
+
+            // Update the text node that is *before* the <span> element.
+            // If the counter element has a span, its first node should be the text node we want to update.
+            if (counter.firstChild && counter.firstChild.nodeType === 3) { // nodeType 3 is a Text Node
+                 counter.firstChild.textContent = numberText;
+            } else if (suffixSpan) {
+                 // If no initial text node exists before the span, create one
+                 counter.insertAdjacentText('afterbegin', numberText);
             } else {
-               
-                counter.textContent = currentCount;
+                 // No span present, just use textContent
+                 counter.textContent = numberText;
             }
 
-            
-            if (suffixSpan) {
-                counter.appendChild(suffixSpan);
-            }
-
-            
+            // Continue the animation if not finished
             if (progress < duration) {
-                
                 window.requestAnimationFrame(step);
             } else {
+                // When finished, set the final formatted target value
+                const finalNumberText = formatNumber(target);
                 
-                if (target === 30000) {
-                    counter.textContent = '30K';
+                if (counter.firstChild && counter.firstChild.nodeType === 3) {
+                    counter.firstChild.textContent = finalNumberText;
+                } else if (suffixSpan) {
+                    counter.insertAdjacentText('afterbegin', finalNumberText);
                 } else {
-                    counter.textContent = target;
-                }
-                
-                if (suffixSpan) {
-                    counter.appendChild(suffixSpan);
+                    counter.textContent = finalNumberText;
                 }
             }
         };
@@ -140,6 +164,5 @@ function dwk_animateCounter(duration = 2000) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    
     dwk_animateCounter(2000); 
 });
