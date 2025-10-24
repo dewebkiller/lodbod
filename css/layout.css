@@ -789,7 +789,9 @@ a.btn-bgcolor-primary:hover {
 footer {
   background: var(--blackcolor);
 }
-
+.footer-widget h3 {
+  color: var(--purewhite);
+}
 .footer-widget {
   color: var(--purewhite);
 }
