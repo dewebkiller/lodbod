@@ -20,7 +20,7 @@
                 <?php include_once('sections/form.php'); ?>
 
             </div>
-            <div class="col-lg-6 col-12 d-flex gap-3 flex-column">
+            <div class="col-lg-6 col-12 d-flex gap-3 flex-column content-champion">
                 <div class="d-flex flex-column">
                     <h2>Lodbod Champions onboarding</h2>
                     <p>Lodbod Champions is our loyalty program built for truck drivers and owners. The more trips you complete with Lodbod, the more rewards you unlock — from cash prizes to lucky draws and exclusive perks.</p>
@@ -31,7 +31,7 @@
                     <p>We'll need some basic information to set up your Lodbod Champions status. This includes contact details and any relevant documents.</p>
                 </div>
 
-                <div class="d-flex row">
+                <div class="d-flex row gap-xs-3">
                     <div class="col-lg-6 col-12">
                         <p class="fw-bold">Requirements</p>
                         <ul class="list-unstyled d-flex flex-column gap-1">
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-12 hero-content-wrapper">
-                <div class="hero-content color-white">
+                <div class="championfaq-title color-white">
                     <h2>Lodbod Champions FAQs</h2>
                     <p>Explore answers to common questions about joining Lodbod Champions program. If you need further assistance, feel free to contact us.</p>
                 </div>
