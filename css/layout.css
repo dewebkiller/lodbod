@@ -752,10 +752,35 @@ a.btn-bgcolor-primary:hover {
     outline: none;
     box-shadow: none;
   }
-#accordionfaq .accordion-button,   #accordionfaq .accordion-button:not(.collapsed) {
-    background: var(--purewhite);
+  #accordionfaq .accordion-button {
+    background: url('../images/icon-angle-right-black.png') no-repeat 16px  center var(--purewhite);
+    padding: 16px 18px 16px 32px;
+    font-size: 20px;
+    font-weight: 600;
   }
-  #accordionfaq .accordion-button:not(.collapsed),   #accordionfaq .accordion-collapse.collapse.show { 
+/* #accordionfaq .accordion-button,   #accordionfaq .accordion-button:not(.collapsed) {
+    background: var(--purewhite);
+  } */
+  #accordionfaq .accordion-button:hover {
+    background: url('../images/icon-angle-right-white.png') no-repeat 16px  center var(--colorbrown);
+    color: var(--purewhite);
+  }
+  #accordionfaq .accordion-button:not(.collapsed) { 
+    background: url('../images/icon-angle-right-white.png') no-repeat 16px  center var(--colorbrown);
+    color: var(--purewhite);
+    box-shadow: none;
+  }
+  #accordionfaq .accordion-button::after {
+    background: url('../images/icon-plus-black.png') no-repeat;
+    width: 22px;
+    height: 22px;
+  }
+  #accordionfaq .accordion-button:not(.collapsed)::after {
+    background: url('../images/icon-minus-white.png') no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+  #accordionfaq .accordion-collapse {
     background: var(--colorbrown);
     color: var(--purewhite);
     box-shadow: none;
