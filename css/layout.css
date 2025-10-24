@@ -618,11 +618,6 @@ a.btn-bgcolor-primary:hover {
   margin-right: 0;
 }
 
-@media (max-width: 991.98px) {
-  .section-pricing .row {
-    grid-template-columns: 1fr;
-  }
-}
 .pricing-card {
   background: var(--lightcolor);
   border-radius: 16px;
