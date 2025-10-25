@@ -6,9 +6,10 @@
 <html>
 
 <head>
-    <title>Lodbod</title>
+    <title>Lodbod | Transforming Logistics with Technology</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lodbod">
+    <meta name="description" content="Lodbod is a unified digital platform designed to enhance the efficiency of Nepal’s logistics industry. By connecting shippers with vehicle operators, optimizing shipments, and providing real-time visibility, we empower stakeholders with transparent, tech-driven solutions that streamline processes, reduce costs, and promote seamless collaboration for a more vibrant and future-forward logistics ecosystem.">
     <meta name="keywords" content="Lodbod">
     <meta name="author" content="dewebkiller">
     <!-- Bootstrap -->
