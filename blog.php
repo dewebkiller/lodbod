@@ -31,10 +31,11 @@
                     <div class="sidebar-card bg-light p-3">
                         <p class="fw-bold">Follow Us On</p>
                         <ul class="list-unstyled d-flex gap-3 sidebar-social">
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="https://www.facebook.com/lodbodnepal" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/lodbod_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/lodbod/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC38fLGMxGtIquhu0JTQK8MA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@lodbod_official" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                         </ul>
                     </div>
                     <div class="sidebar-card bg-light p-3">
@@ -60,7 +61,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="btn-blog">Read More </a>
+                            <a href="blog-single.php" class="btn-blog">Read More </a>
                         </div>
                         <div class="col-lg-6 col-12 blog-card-wrapper d-flex flex-column">
                             <div class="blog-content">
@@ -73,7 +74,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="btn-blog">Read More </a>
+                            <a href="blog-single.php" class="btn-blog">Read More </a>
                         </div>
                         <div class="col-lg-6 col-12 blog-card-wrapper d-flex flex-column">
                             <div class="blog-content">
@@ -86,7 +87,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="btn-blog">Read More </a>
+                            <a href="blog-single.php" class="btn-blog">Read More </a>
                         </div>
                         <div class="col-lg-6 col-12 blog-card-wrapper d-flex flex-column">
                             <div class="blog-content">
@@ -99,7 +100,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" class="btn-blog">Read More </a>
+                            <a href="blog-single.php" class="btn-blog">Read More </a>
                         </div>
 
                     </div>

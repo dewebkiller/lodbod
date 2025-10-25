@@ -529,7 +529,7 @@ a.btn-bgcolor-primary:hover {
 }
 
 /* Optional: Add hover effect */
-.dwkSwiper .swiper-slide {
+.card-light .swiper-slide {
   background: var(--lightcolor);
   padding: 20px;
   border-radius: 16px;
@@ -555,28 +555,31 @@ a.btn-bgcolor-primary:hover {
 .slider-header-controls .swiper-button-prev:after {
   background: url(../images/arrow-left.svg);
 }
-.dwkSwiper .swiper-slide ul {
+.card-light .swiper-slide ul {
   justify-content: center;
 }
-.dwkSwiper .swiper-slide ul li i {
+.card-light .swiper-slide ul li i {
   font-size: 40px;
   color: var(--coloryellow);
   margin-bottom: 20px;
 }
-.dwkSwiper .swiper-slide {
+.card-light .swiper-slide {
   width: 70%;
   box-sizing: border-box;
 }
-.dwkSwiper .swiper-slide .slide-content p {
+.blog-card-wrapper.card-light .swiper-slide {
+  width: 100%;
+}
+.card-light .swiper-slide .slide-content p {
   font-size: 20px;
   color: var(--black80);
 }
-.dwkSwiper .swiper-slide .slide-content span.sippers-name {
+.card-light .swiper-slide .slide-content span.sippers-name {
   font-size: 16px;
   color: var(--blackcolor);
 }
 
-.dwkSwiper .swiper-slide .slide-content span.shippers-desc {
+.card-light .swiper-slide .slide-content span.shippers-desc {
   font-size: 12px;
   color: var(--blackcolor);
   display: block;

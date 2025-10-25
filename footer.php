@@ -15,10 +15,10 @@
                 <div class="footer-widget">
                     <h3>Solutions</h3>
                     <ul>
-                        <li><a href="#">Shippers</a></li>
-                        <li><a href="#">Truckers</a></li>
+                        <li><a href="shippers.php">Shippers</a></li>
+                        <li><a href="truckers.php">Truckers</a></li>
                         <li><a href="#">Tracking</a></li>
-                        <li><a href="#">Lodbod Champions</a></li>
+                        <li><a href="champions.php">Lodbod Champions</a></li>
                     </ul>
                 </div>
             </div>
@@ -26,10 +26,10 @@
                 <div class="footer-widget">
                     <h3>Legal & Help</h3>
                     <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Help Center</a></li>
+                        <li><a href="terms-of-service.php">Terms of Service</a></li>
+                        <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                        <li><a href="cookies-policy.php">Cookies Policy</a></li>
+                        <li><a href="help-center.php">Help Center</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,10 +37,10 @@
                 <div class="footer-widget">
                     <h3>Company</h3>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="about.php">About Us</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
+                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="faq.php">FAQs</a></li>
                     </ul>
                 </div>
             </div>
@@ -59,10 +59,11 @@
                 <div class="footer-social">
                     
                 <ul class="list-unstyled d-flex gap-3">
-                    <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/lodbodnepal" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/lodbod_official/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/lodbod/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC38fLGMxGtIquhu0JTQK8MA" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@lodbod_official" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
                 </div>
                 <a href="#" class="scrollup"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>

@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>
+                <a href="./blog-single.php" class="btn-blog">Read More </a>
             </div>
 
             <div class="col-lg-4 col-12 blog-card-wrapper d-flex flex-column">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>
+                <a href="./blog-single.php" class="btn-blog">Read More </a>
             </div>
 
             <div class="col-lg-4 col-12 blog-card-wrapper d-flex flex-column">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="btn-blog">Read More </a>
+                <a href="./blog-single.php" class="btn-blog">Read More </a>
             </div>
 
         </div>

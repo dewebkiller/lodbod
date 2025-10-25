@@ -20,7 +20,7 @@
     </div>
     <div class="swiper dwkSwiper">
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper card-light">
             <div class="swiper-slide">
                 <div class="slide-content">
                     <ul class="list-unstyled d-flex gap-1">

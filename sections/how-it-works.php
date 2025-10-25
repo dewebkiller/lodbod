@@ -1,4 +1,4 @@
-<section class="section-padding section-how-it-works">
+<section class="section-padding-4 section-how-it-works">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 col-12">

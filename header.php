@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-6">
-                        <div class="logo"><img src="images/logo.png" alt="Lodbod"></div>
+                        <div class="logo"><a href="./"><img src="images/logo.png" alt="Lodbod" title="Lodbod"></a></div>
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-12 col-6 col-xs-12">
                         <div class="main-menu">

@@ -1,4 +1,4 @@
-<section class="section-padding section-features bg-light">
+<section class="section-padding-2x section-features bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-12">
