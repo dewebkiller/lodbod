@@ -80,11 +80,29 @@ h4 {
 .section-padding-4 {
   padding: calc(var(--sectionpadding) + 40px) 0;
 }
+.section-padding-n2 {
+  padding: calc(var(--sectionpadding) - 20px) 0;
+}
+.section-padding-n4 {
+  padding: calc(var(--sectionpadding) - 40px) 0;
+}
 .section-padding-bottom {
   padding-bottom: var(--sectionpadding);
 }
 .section-padding-top {
   padding-top: var(--sectionpadding);
+}
+.section-padding-bottom-2 {
+  padding-bottom: var(--sectionpadding);
+}
+.section-padding-bottom-4 {
+  padding-bottom: calc(var(--sectionpadding) + 40px);
+}
+.section-padding-bottom-n2 {
+  padding-bottom: calc(var(--sectionpadding) - 20px);
+}
+.section-padding-bottom-n4 {
+  padding-bottom: calc(var(--sectionpadding) - 40px);
 }
 .no-padding {
   padding: 0;
@@ -632,6 +650,9 @@ article ol, article ul {
   padding-left: 16px;
   margin: 0;
 }
+.share-this ul {
+  flex-wrap: wrap;
+}
 .sidebar-card a {
   color: var(--blackcolor);
 }
@@ -866,6 +887,53 @@ ease-in-out;
 #championfaq .accordion-item {
   border-radius: 12px;
   border: none;
+  overflow: hidden;
+}
+
+/* Faq Inner Accordion */
+#accordionfaq-inner .accordion-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+#accordionfaq-inner .accordion-button {
+  background: url("../images/icon-angle-right-black.png") no-repeat 16px center
+    var(--purewhite);
+  padding: 16px 18px 16px 32px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* #accordionfaq-inner .accordion-button,   #accordionfaq-inner .accordion-button:not(.collapsed) {
+    background: var(--purewhite);
+  } */
+#accordionfaq-inner .accordion-button:hover {
+  background: url("../images/icon-angle-right-white.png") no-repeat 16px center
+    var(--black90);
+  color: var(--purewhite);
+}
+#accordionfaq-inner .accordion-button:not(.collapsed) {
+  background: url("../images/icon-angle-right-white.png") no-repeat 16px center
+    var(--black90);
+  color: var(--purewhite);
+  box-shadow: none;
+}
+#accordionfaq-inner .accordion-button::after {
+  background: url("../images/icon-plus-black.png") no-repeat;
+  width: 22px;
+  height: 22px;
+}
+#accordionfaq-inner .accordion-button:not(.collapsed)::after {
+  background: url("../images/icon-minus-white.png") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+#accordionfaq-inner .accordion-collapse {
+  background: var(--black90);
+  color: var(--purewhite);
+  box-shadow: none;
+}
+#accordionfaq-inner .accordion-item {
+  border-radius: 12px;
+  border: 1px solid var(--black40);
   overflow: hidden;
 }
 /* Champion Accordion */
