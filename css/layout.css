@@ -18,6 +18,7 @@
   --coloryellow: #ffbe3f;
   --colorbrown: #aa4930;
   --sectionpadding: 60px;
+  --borderradius: 4px;
   --h1font: 52px;
   --font-family-heading: "Libre Franklin", sans-serif;
   --font-family-primary: "Archivo", sans-serif;
@@ -126,6 +127,9 @@ h4 {
 }
 .bg-black {
   background-color: var(--blackcolor);
+}
+.bg-black-80 {
+  background-color: var(--black80);
 }
 .bg-white {
   background-color: var(--purewhite);
@@ -242,11 +246,21 @@ h4 {
 .row-mb-3 > div:nth-child(n + 4) {
   margin-top: 3rem;
 }
-.border-radius-4 {
-  border-radius: 4px;
+
+.border-radius-4, .border-radius {
+  border-radius: var(--borderradius);
 }
-.border-radius-8 {
-  border-radius: 8px;
+.border-radius-8, .border-radius-2x {
+  border-radius: calc(var(--borderradius) * 2);
+}
+.border-radius-3x {
+  border-radius: calc(var(--borderradius) * 3);
+}
+.border-radius-4x {
+  border-radius: calc(var(--borderradius) * 4);
+}
+.border-radius-5x {
+  border-radius: calc(var(--borderradius) * 5);
 }
 .btn-border {
   border: 1px solid;
@@ -563,6 +577,9 @@ a.btn-bgcolor-primary:hover {
   gap: 42px;
   justify-content: space-between;
 }
+.blog-container .blog-card-wrapper {
+  gap: 0;
+}
 .blog-card-wrapper .blog-card-thumbnail img {
   height: 284px;
   width: auto;
@@ -601,6 +618,45 @@ a.btn-bgcolor-primary:hover {
 }
 .blog-card-wrapper a.btn-blog:hover::after {
   background-image: url(../images/icon-arrow-red.svg);
+}
+.article-quote p {
+  margin-bottom: 0;
+}
+.blog-single-image-wrapper figure {
+  margin: 0;
+}
+.blog-single-image-wrapper figure img, .blog-single-image-wrapper img {
+  border-radius: calc(var(--borderradius) * 2)
+}
+article ol, article ul {
+  padding-left: 16px;
+  margin: 0;
+}
+.sidebar-card a {
+  color: var(--blackcolor);
+}
+.sidebar-card a:hover {
+  color: var(--primarycolor);
+}
+.sidebar-card .sidebar-social  li:hover a  {
+  color: var(--purewhite);
+}
+.sidebar-social li {
+  border: 1px solid var(--blackcolor);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  transition: color .15s 
+ease-in-out, background-color .15s 
+ease-in-out, border-color .15s 
+ease-in-out, box-shadow .15s 
+ease-in-out;
+}
+.sidebar-social li:hover {
+  background: var(--primarycolor);
+  border: 1px solid var(--primarycolor);
 }
 /* Home contact section */
 .heading-wrapper p {
@@ -846,6 +902,9 @@ a.btn-bgcolor-primary:hover {
 .location-content > li p {
   margin-bottom: 0;
 }
+.map-wrapper {
+  line-height: 0;
+}
 /* Footer */
 footer {
   background: var(--blackcolor);
@@ -891,13 +950,13 @@ footer {
 }
 
 .scrollup {
-  color: #fff;
+  color: var(--black40);
   padding: 10px;
   position: fixed;
   bottom: 50px;
   right: 50px;
   display: none;
-  background-color: #999;
+  background-color: var(--primarycolor);
 }
 
 /* responsive */

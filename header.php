@@ -48,19 +48,19 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mb-2 mb-lg-0">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">Shippers </a>
+                                            <a class="nav-link" href="shippers.php">Shippers </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Truckers </a>
+                                            <a class="nav-link" href="truckers.php">Truckers </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Tracking </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">About Us </a>
+                                            <a class="nav-link" href="about.php">About Us </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Contact Us</a>
+                                            <a class="nav-link" href="contact.php">Contact Us</a>
                                         </li>
                                         <li class="nav-item d-block d-sm-block d-md-none">
                                             <a class="nav-link" href="#">Login</a>
